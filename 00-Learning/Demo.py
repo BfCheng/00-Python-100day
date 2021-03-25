@@ -58,5 +58,16 @@
 # print(even)
 # print(odd)
 # =======================*****************************=========================== #
-# 循环
+# 构造程序逻辑
+# """
+# 正整数的反转
+#
+def number_reversed(self):
+    self = int(input('num = '))
+    reversed_num = 0
+    while self > 0:
+        reversed_num = reversed_num * 10 + self % 10
+        self //= 10
+    print(reversed_num)
 
+number_reversed(234)
